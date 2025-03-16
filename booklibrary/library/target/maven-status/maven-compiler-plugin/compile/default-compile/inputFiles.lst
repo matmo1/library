@@ -1,0 +1,5 @@
+/home/az_si_znam/glavniyaIliev/book/booklibrary/library/src/main/java/com/library/books/BooksApplication.java
+/home/az_si_znam/glavniyaIliev/book/booklibrary/library/src/main/java/com/library/books/controller/BookController.java
+/home/az_si_znam/glavniyaIliev/book/booklibrary/library/src/main/java/com/library/books/model/Book.java
+/home/az_si_znam/glavniyaIliev/book/booklibrary/library/src/main/java/com/library/books/repository/BookRepository.java
+/home/az_si_znam/glavniyaIliev/book/booklibrary/library/src/main/java/com/library/books/services/BookService.java
