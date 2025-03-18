@@ -19,7 +19,7 @@ Welcome to the **Library Management System** repository! This project is designe
 - **RESTful APIs**: Provides endpoints for all operations.
 
 ### Frontend (In Progress)
-- **User Interface**: A modern and responsive UI for library management.
+- **User Interface**: A responsive UI for library management.
 - **Integration with Backend**: Work in progress to connect the frontend with the backend APIs.
 
 ---
@@ -33,9 +33,7 @@ Welcome to the **Library Management System** repository! This project is designe
 - **Maven**: For dependency management.
 
 ### Frontend (Planned)
-- **React.js**: For building the user interface.
-- **Axios**: For API integration.
-- **Bootstrap**: For styling and responsiveness.
+- **Swing**: For building the user interface.
 
 ---
 
