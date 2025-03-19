@@ -4,9 +4,10 @@ import javax.swing.*;
 
 import com.booklibrary.frontend.gui.BookManagementGUI;
 import com.booklibrary.frontend.services.BookServiceClient;
+import com.booklibrary.backend.BackendMain;
 
 public class FrontendMain {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         System.setProperty("java.awt.headless", "false");
         // Global exception handler for uncaught exceptions
     Thread.setDefaultUncaughtExceptionHandler((thread, throwable) -> {
@@ -14,8 +15,9 @@ public class FrontendMain {
         throwable.printStackTrace();
     });
 
-    // new Thread(() -> BackendMain.main(args)).start();
+    new Thread(() -> BackendMain.main(args)).start();
     
+    Thread.sleep(10000);
 
     // Initialize the service client
     BookServiceClient bookServiceClient = new BookServiceClient();

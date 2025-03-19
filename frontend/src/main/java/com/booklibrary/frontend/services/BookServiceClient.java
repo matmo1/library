@@ -1,5 +1,9 @@
 package com.booklibrary.frontend.services;
 
+import com.booklibrary.backend.model.Book;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -8,10 +12,6 @@ import java.net.http.HttpResponse;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
-
-import com.booklibrary.backend.model.Book;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class BookServiceClient {
     private static final String BASE_URL = "http://localhost:8080/api/books";
@@ -35,7 +35,7 @@ public class BookServiceClient {
         try {
             String json = mapper.writeValueAsString(book);
             HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(BASE_URL))
+                .uri(URI.create(BASE_URL + "/addBook"))
                 .header("Content-Type", "application/json")
                 .POST(HttpRequest.BodyPublishers.ofString(json))
                 .build();
@@ -50,7 +50,7 @@ public class BookServiceClient {
         try {
             String json = mapper.writeValueAsString(book);
             HttpRequest request = HttpRequest.newBuilder()
-                    .uri(URI.create(BASE_URL + "/" + id))
+                    .uri(URI.create(BASE_URL + "/update/" + id))
                     .header("Content-Type", "application/json")
                     .PUT(HttpRequest.BodyPublishers.ofString(json))
                     .build();
@@ -65,7 +65,7 @@ public class BookServiceClient {
     public void deleteBook(UUID id) {
         try {
             HttpRequest request = HttpRequest.newBuilder()
-                    .uri(URI.create(BASE_URL + "/" + id))
+                    .uri(URI.create(BASE_URL + "/delete/" + id))
                     .DELETE()
                     .build();
 
