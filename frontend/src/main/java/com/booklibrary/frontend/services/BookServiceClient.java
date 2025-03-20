@@ -20,7 +20,7 @@ public class BookServiceClient {
 
     public List<Book> getAllBooks() {
         HttpRequest request = HttpRequest.newBuilder()
-            .uri(URI.create(BASE_URL))
+            .uri(URI.create(BASE_URL + "/allBooks"))
             .GET()
             .build();
         try {
@@ -77,7 +77,7 @@ public class BookServiceClient {
 
     public Optional<Book> getBookById(UUID id) {
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(BASE_URL + "/" + id))
+                .uri(URI.create(BASE_URL + "/searchById/" + id))
                 .GET()
                 .build();
 

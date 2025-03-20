@@ -19,7 +19,7 @@ public class BookController {
     private BookRepository bookRepository;
 
     // GET all books
-    @GetMapping
+    @GetMapping("/allBooks")
     public ResponseEntity<List<Book>> getAllBooks() {
         List<Book> books = bookRepository.findAll();
         return new ResponseEntity<>(books, HttpStatus.OK);
