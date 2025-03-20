@@ -68,7 +68,14 @@ public class BookManagementGUI extends JFrame {
         }
 
         // Create and return the table
-        return new JTable(data, columnNames);
+        JTable bookTable = new JTable(data, columnNames) {
+        @Override
+        public boolean isCellEditable(int row, int column) {
+            return false;
+            }
+        };
+
+        return bookTable;
     }
 
     private void openAddBookDialog() {
