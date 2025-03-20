@@ -20,7 +20,7 @@ Welcome to the **Library Management System** repository! This project is designe
 
 ### Frontend (In Progress)
 - **User Interface**: A responsive UI for library management.
-- **Integration with Backend**: Work in progress to connect the frontend with the backend APIs.
+- **Integration with Backend**: The Frontend is fully integrated with the Backend API endpoints.
 
 ---
 
@@ -48,3 +48,10 @@ Welcome to the **Library Management System** repository! This project is designe
 1. Clone the repository:
    ```bash
    git clone https://github.com/matmo1/library.git
+
+
+### How to run it
+1. First you'll need a MySQL sever running
+- Dont't forget to edit backend/src/main/resources/application.properties
+
+2. Run frontend/src/main/java/com/booklibrary/frontend/FrontendMain.java
