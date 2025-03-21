@@ -18,7 +18,7 @@ Welcome to the **Library Management System** repository! This project is designe
 - **Database Integration**: Uses MariaDB for data storage.
 - **RESTful APIs**: Provides endpoints for all operations.
 
-### Frontend (In Progress)
+### Frontend 
 - **User Interface**: A responsive UI for library management.
 - **Integration with Backend**: The Frontend is fully integrated with the Backend API endpoints.
 
