@@ -32,7 +32,7 @@ Welcome to the **Library Management System** repository! This project is designe
 - **Hibernate**: For ORM (Object-Relational Mapping).
 - **Maven**: For dependency management.
 
-### Frontend (Planned)
+### Frontend 
 - **Swing**: For building the user interface.
 
 ---
